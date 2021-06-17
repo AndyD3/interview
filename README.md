@@ -33,6 +33,8 @@ docker build -t adouglas/interview-app:latest .
 ```
 docker-compose up --force-recreate
 ```
+Note: There's occasionally a timing problem where the App starts and tries to connect to the DB before it is up - in this case stop the compose (Ctrl+C) then re-run the command
+
 4. The web application is then running with JSON dashboards available at http://localhost:80/dashboards
 
 ## Testing
