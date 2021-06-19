@@ -1,8 +1,6 @@
 package com.douglas.andy.interview.entities;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.sql.Timestamp;
 import java.util.Objects;
 
@@ -10,6 +8,7 @@ import java.util.Objects;
 public class Dashboard {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
     ////////////////////////////////////////////////
